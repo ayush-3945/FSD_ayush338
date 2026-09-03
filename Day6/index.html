@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommended Jobs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- HEADER -->
+    <header>
+        <div class="heading">
+            <h1>Recommended jobs</h1>
+            <span>386</span>
+        </div>
+
+        <div class="sort">
+            Sort by: <b>Last updated</b> ↕
+        </div>
+    </header>
+
+
+    <!-- JOBS -->
+    <main class="job-container" id="jobContainer"></main>
+
+</div>
+
+
+<!-- DETAILS POPUP -->
+<div class="modal" id="modal">
+
+    <div class="modal-box">
+
+        <button class="close" onclick="closeModal()">×</button>
+
+        <h2 id="modalTitle"></h2>
+
+        <p id="modalCompany"></p>
+        <p id="modalSalary"></p>
+        <p id="modalLocation"></p>
+
+        <button class="apply">Apply Now</button>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
