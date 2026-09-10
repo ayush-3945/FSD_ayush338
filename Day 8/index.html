@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Student Management System</h1>
+
+        <!-- Row 1 -->
+        <div class="form-row">
+
+            <div class="form-group">
+                <label>Student Name</label>
+                <input type="text" id="studentName"
+                       placeholder="Enter student name">
+            </div>
+
+            <div class="form-group">
+                <label>Roll No.</label>
+                <input type="text" id="rollNo"
+                       placeholder="Enter roll number">
+            </div>
+
+        </div>
+
+        <!-- Row 2 -->
+        <div class="form-row">
+
+            <div class="form-group">
+                <label>Course</label>
+
+                <select id="course">
+                    <option value="">Select Course</option>
+                    <option value="B.Tech CSE">B.Tech CSE</option>
+                    <option value="B.Tech IT">B.Tech IT</option>
+                    <option value="BCA">BCA</option>
+                    <option value="MCA">MCA</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Marks</label>
+
+                <input type="number" id="marks"
+                       placeholder="Enter marks">
+            </div>
+
+        </div>
+
+        <!-- Add Student -->
+        <button class="add-btn"
+                id="addButton"
+                onclick="addStudent()">
+            Add Student
+        </button>
+
+
+        <!-- Search -->
+        <input type="text"
+               id="search"
+               class="search-box"
+               placeholder="Search by Name or Roll No."
+               onkeyup="displayStudents()">
+
+
+        <!-- Statistics -->
+        <div class="stats">
+
+            <div class="stat-box">
+                Total Students:
+                <span id="total">0</span>
+            </div>
+
+            <div class="stat-box">
+                Average Marks:
+                <span id="average">0</span>
+            </div>
+
+        </div>
+
+
+        <!-- Student Table -->
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Roll No.</th>
+                    <th>Name</th>
+                    <th>Course</th>
+                    <th>Marks</th>
+                    <th>Grade</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+
+            <tbody id="studentTable">
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <script src = "script.js"></script>
+
+</body>
+
+</html>

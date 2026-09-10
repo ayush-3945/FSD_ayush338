@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f2f2f2;
+    padding: 30px;
+}
+
+.container {
+    width: 850px;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #222;
+}
+
+/* Form */
+
+.form-row {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    width: 50%;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 17px;
+}
+
+input,
+select {
+    width: 100%;
+    height: 42px;
+    padding: 8px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+/* Add Button */
+
+.add-btn {
+    width: 100%;
+    height: 45px;
+    margin-bottom: 25px;
+
+    background-color: #eee;
+    border: 1px solid #777;
+    border-radius: 5px;
+
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.add-btn:hover {
+    background-color: #ddd;
+}
+
+/* Search */
+
+.search-box {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+/* Statistics */
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.stat-box {
+    width: 45%;
+    padding: 15px;
+
+    border: 1px solid #aaa;
+    border-radius: 5px;
+
+    font-size: 17px;
+}
+
+
+/* Table */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #aaa;
+    padding: 12px 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #eee;
+}
+
+
+/* Action Buttons */
+
+.edit-btn,
+.delete-btn {
+    padding: 6px 12px;
+    border: 1px solid #777;
+    border-radius: 4px;
+    background-color: #eee;
+    cursor: pointer;
+}
+
+.edit-btn:hover,
+.delete-btn:hover {
+    background-color: #ccc;
+}
+
+.edit-btn {
+    margin-right: 5px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 900px) {
+
+    .container {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .form-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .form-group {
+        width: 100%;
+    }
+
+    .stats {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .stat-box {
+        width: 100%;
+    }
+
+}
