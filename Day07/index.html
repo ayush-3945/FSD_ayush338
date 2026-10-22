@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 07 - Modular Job Portal & Search Filter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="heading">
+            <h1>Recommended Jobs</h1>
+            <span id="jobCount">6</span>
+        </div>
+        <div class="controls">
+            <input type="text" id="searchInput" placeholder="Search by title or company..." />
+        </div>
+    </header>
+
+    <div class="filters" id="tagFilters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="Full time">Full time</button>
+        <button class="filter-btn" data-filter="Part time">Part time</button>
+        <button class="filter-btn" data-filter="Design">Design</button>
+    </div>
+
+    <main class="job-container" id="jobContainer"></main>
+</div>
+
+<!-- DETAILS POPUP -->
+<div class="modal" id="modal">
+    <div class="modal-box">
+        <button class="close" onclick="closeModal()">&times;</button>
+        <h2 id="modalTitle"></h2>
+        <p id="modalCompany"></p>
+        <p id="modalSalary"></p>
+        <p id="modalLocation"></p>
+    </div>
+</div>
+
+<script src="jobs.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
