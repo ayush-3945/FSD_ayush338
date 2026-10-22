@@ -1,16 +1,21 @@
-# React + Vite
+# Day 13: React Todo List with Complete CRUD Operations
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+## Overview
+A complete React Todo List application built with Vite, implementing full CRUD (Create, Read, Update, Delete) operations using the `useState` hook as taught in the FSD lab session.
 
-Currently, two official plugins are available:
+## CRUD Operations Implemented
+- **Create (Add Task):** Form input with Add button to append new tasks into state.
+- **Read (Show Tasks):** Renders task items dynamically with unique bullet formatting.
+- **Update (Edit Task):** Selects task into the input box and updates state dynamically with Update/Cancel controls.
+- **Delete (Remove Task):** Removes tasks by unique ID from state.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Whiteboard Learning Reference
+1. **Create:** Add Task
+2. **Read:** Show Tasks
+3. **Update:** Edit Task
+4. **Delete:** Remove Task
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Technologies Used
+- React 18 (`useState` Hook)
+- Vite
+- Modern Responsive CSS
